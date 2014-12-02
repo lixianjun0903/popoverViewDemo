@@ -21,6 +21,8 @@
 		674EE18E19B86826006D9CC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674EE17019B86826006D9CC5 /* UIKit.framework */; };
 		674EE19619B86826006D9CC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 674EE19419B86826006D9CC5 /* InfoPlist.strings */; };
 		674EE19819B86826006D9CC5 /* PopoverViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 674EE19719B86826006D9CC5 /* PopoverViewDemoTests.m */; };
+		674EE1A319B86849006D9CC5 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 674EE1A219B86849006D9CC5 /* PopoverView.m */; };
+		674EE1A519B8689C006D9CC5 /* 28b.png in Resources */ = {isa = PBXBuildFile; fileRef = 674EE1A419B8689C006D9CC5 /* 28b.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		674EE19319B86826006D9CC5 /* PopoverViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PopoverViewDemoTests-Info.plist"; sourceTree = "<group>"; };
 		674EE19519B86826006D9CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		674EE19719B86826006D9CC5 /* PopoverViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopoverViewDemoTests.m; sourceTree = "<group>"; };
+		674EE1A119B86849006D9CC5 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
+		674EE1A219B86849006D9CC5 /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
+		674EE1A419B8689C006D9CC5 /* 28b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 28b.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,9 @@
 				674EE17E19B86826006D9CC5 /* Main.storyboard */,
 				674EE18119B86826006D9CC5 /* ViewController.h */,
 				674EE18219B86826006D9CC5 /* ViewController.m */,
+				674EE1A119B86849006D9CC5 /* PopoverView.h */,
+				674EE1A219B86849006D9CC5 /* PopoverView.m */,
+				674EE1A419B8689C006D9CC5 /* 28b.png */,
 				674EE18419B86826006D9CC5 /* Images.xcassets */,
 				674EE17319B86826006D9CC5 /* Supporting Files */,
 			);
@@ -230,6 +238,7 @@
 			files = (
 				674EE18519B86826006D9CC5 /* Images.xcassets in Resources */,
 				674EE17719B86826006D9CC5 /* InfoPlist.strings in Resources */,
+				674EE1A519B8689C006D9CC5 /* 28b.png in Resources */,
 				674EE18019B86826006D9CC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +260,7 @@
 			files = (
 				674EE18319B86826006D9CC5 /* ViewController.m in Sources */,
 				674EE17D19B86826006D9CC5 /* AppDelegate.m in Sources */,
+				674EE1A319B86849006D9CC5 /* PopoverView.m in Sources */,
 				674EE17919B86826006D9CC5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +389,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PopoverViewDemo/PopoverViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "PopoverViewDemo/PopoverViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,6 +403,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PopoverViewDemo/PopoverViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "PopoverViewDemo/PopoverViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +468,7 @@
 				674EE19D19B86826006D9CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		674EE19E19B86826006D9CC5 /* Build configuration list for PBXNativeTarget "PopoverViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +477,7 @@
 				674EE1A019B86826006D9CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
