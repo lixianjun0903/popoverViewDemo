@@ -19,6 +19,7 @@
 {
     [super viewDidLoad];
     
+    // 有图标按钮
     UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
     [button setFrame:CGRectMake(40, 100,100 , 60)];
     [button setBackgroundColor:[UIColor orangeColor]];
@@ -29,6 +30,7 @@
     [button addTarget:self action:@selector(button1Clicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
+    // 无图标按钮
     UIButton *button2=[UIButton buttonWithType:UIButtonTypeCustom];
     [button2 setFrame:CGRectMake(180, 100,100 , 60)];
     [button2 setBackgroundColor:[UIColor orangeColor]];
@@ -41,6 +43,7 @@
     
 }
 
+
 -(void)button1Clicked:(UIButton *)sender
 {
     CGPoint point = CGPointMake(sender.frame.origin.x + sender.frame.size.width/2, sender.frame.origin.y + sender.frame.size.height);
@@ -50,7 +53,9 @@
     pop.selectRowAtIndex = ^(NSInteger index){
         NSLog(@"select index:%ld", index);
     };
+    
     [pop show];
+    
 }
 
 -(void)button2Clicked:(UIButton *)sender
@@ -61,6 +66,7 @@
     pop.selectRowAtIndex = ^(NSInteger index){
         NSLog(@"select index:%ld", index);
     };
+    
     [pop show];
 }
 
@@ -68,7 +74,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   
 }
 
 @end

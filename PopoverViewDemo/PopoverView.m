@@ -245,7 +245,9 @@
     [popoverPath moveToPoint:CGPointMake(xMin, yMin)];//左上角
     
     /********************向上的箭头**********************/
-    [popoverPath addLineToPoint:CGPointMake(arrowPoint.x - kArrowHeight, yMin)];//left side
+    [popoverPath addLineToPoint:CGPointMake(arrowPoint.x - kArrowHeight, yMin)];//  left side 左边点
+    
+    
     [popoverPath addCurveToPoint:arrowPoint
                    controlPoint1:CGPointMake(arrowPoint.x - kArrowHeight + kArrowCurvature, yMin)
                    controlPoint2:arrowPoint];//actual arrow point
@@ -253,6 +255,7 @@
     [popoverPath addCurveToPoint:CGPointMake(arrowPoint.x + kArrowHeight, yMin)
                    controlPoint1:arrowPoint
                    controlPoint2:CGPointMake(arrowPoint.x + kArrowHeight - kArrowCurvature, yMin)];//right side
+    
     /********************向上的箭头**********************/
     
     
